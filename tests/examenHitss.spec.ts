@@ -19,10 +19,10 @@ test('Mercado Libre', async ({ page }) => {
   //order by price from highest to lowest
   //view the first 5 items
   //await expect(page.locator('//ol[contains(@class, \'ui-search-layout\')]')).toBeVisible();
-  const titles= await page.locator('//ol[contains(@class, \'ui-search-layout\')]//li//h3').allInnerTexts();
-  console.log('the total numbers of results is: ', titles.length);
-  const firstFive = titles.slice(0, 5);
-  for (let title of firstFive) {
-    console.log('the title is:', title);
-  } 
+  //const titles= await page.locator('//ol[contains(@class, \'ui-search-layout\')]//li//h3').allInnerTexts();
+  //console.log('the total numbers of results is: ', titles.length);
+  //const firstFive = titles.slice(0, 5);
+  //for (let title of firstFive) {
+  //  console.log('the title is:', title);
+  //} 
 });
