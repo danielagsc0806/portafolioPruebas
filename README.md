@@ -7,9 +7,8 @@ Extenciones recomendadas:
 
 Comandos Playwright:
 -INSTALACIÓN:
-npm install
 npm install -D @playwright/test
--EJECUTAR TEST: npx platwright test
+-EJECUTAR TEST: npx playwright test
 
 Comandos allure:
 -INSTALACIÓN:
