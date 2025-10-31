@@ -1,2 +1,2 @@
 "DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"","2471","Mercado Libre","chromium","Fri Oct 31 17:14:12 UTC 2025","passed","Fri Oct 31 17:14:15 UTC 2025","","examenHitss.spec.ts","",""
+"","13096","Mercado Libre","chromium","Fri Oct 31 17:25:34 UTC 2025","failed","Fri Oct 31 17:25:47 UTC 2025","","examenHitss.spec.ts","",""
