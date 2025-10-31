@@ -7,4 +7,4 @@ node_modules/
 /playwright/.auth/
 #allure
 #allure-results/
-allure-report/
+#allure-report/
