@@ -56,7 +56,7 @@ jobs:
           #Carpeta con resultados de test
           #Carpeta con el reporte visual de Allure
           path: |
-            test-results/**
+            allure-results/**
             allure-report/**
 
       # Paso 8: Publica el reporte Allure en GitHub Pages
