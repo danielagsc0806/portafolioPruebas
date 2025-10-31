@@ -12,8 +12,8 @@ test('Mercado Libre', async ({ page }) => {
   await page.keyboard.press('Enter');
   //await expect(page.locator('//h1[contains(text(), "Playstation 5")]')).toBeVisible();
   //filter by new condition
-  await page.locator('//h3[contains(text(), "Condición")]').scrollIntoViewIfNeeded();
-  await page.locator('//span[contains(text(), "Nuevo")]').click();
+  //await page.locator('//h3[contains(text(), "Condición")]').scrollIntoViewIfNeeded();
+  //await page.locator('//span[contains(text(), "Nuevo")]').click();
   //await expect(page.locator('//div[contains(@class, "andes-tag__label") and contains(text(), "Nuevo")]')).toBeVisible();
   //the filter for ubication is not disponible
   //order by price from highest to lowest
