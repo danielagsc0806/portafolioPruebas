@@ -6,5 +6,5 @@ node_modules/
 /playwright/.cache/
 /playwright/.auth/
 #allure
-#allure-results/
-#allure-report/
+allure-results/
+allure-report/

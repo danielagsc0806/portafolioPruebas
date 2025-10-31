@@ -17,7 +17,10 @@ export default defineConfig({
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   reporter: [
     ['list'],
-    ['allure-playwright']
+    ['allure-playwright' ,{
+      outputFolder: 'allure-results',
+    }],
+    
   ],
 
   use: {
@@ -25,6 +28,9 @@ export default defineConfig({
     trace: 'on',
     video: 'on',
     screenshot: 'on',
+  },
+  expect: {
+    timeout: 10000 // Tiempo máximo para aserciones como toBeVisible()
   },
 
   /* Configure projects for major browsers */

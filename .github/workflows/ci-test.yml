@@ -37,13 +37,6 @@ jobs:
       - name: Install browsers
         run: npx playwright install chromium
 
-      # Limpia artefactos de pruebas anteriores
-      - name: Clean test artifacts
-        run: |
-              rm -rf allure-report/*
-              rm -rf allure-results/*
-              rm -rf test-results/*
-              
       # Paso 5: Ejecuta los tests definidos en archivos .feature usando CodeceptJS
       - name: Run Playwright test
         run: npx playwright test
