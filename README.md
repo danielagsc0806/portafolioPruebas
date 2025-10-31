@@ -6,12 +6,9 @@ Extenciones recomendadas:
 -Playright Test for VSCode
 
 Comandos Playwright:
--INSTALACIÓN: npm init playwright@latest
--CONFIGURACIÓN NECESARIA PARA EJECUTAR EL TEST:
-1:use TypeScript
-2:dir tests: test
-3:GitHub Actions: false
-4:install browsers: true
+-INSTALACIÓN:
+npm install
+npm install -D @playwright/test
 -EJECUTAR TEST: npx platwright test
 
 Comandos allure:
