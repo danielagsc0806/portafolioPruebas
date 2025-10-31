@@ -21,7 +21,7 @@ export default defineConfig({
   ],
 
   use: {
-    headless: false,
+    headless: true,
     trace: 'on',
     video: 'on',
     screenshot: 'on',
