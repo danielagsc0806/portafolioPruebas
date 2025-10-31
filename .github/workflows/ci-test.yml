@@ -45,7 +45,7 @@ jobs:
       - name: Generate Allure report
         if: always()   # Se ejecuta siempre, incluso si los tests fallan
         run: |
-          allure generate allure-results --clean -o allure-report || echo "No Allure results found"
+          npx allure generate allure-results --clean -o allure-report || echo "No Allure results found"
 
       # Paso 7: Sube los artefactos generados (logs, capturas de pantalla, reporte Allure)
       - name: Upload test artifacts (logs, screenshots & allure)
