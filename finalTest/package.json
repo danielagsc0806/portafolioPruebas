@@ -1,0 +1,27 @@
+{
+  "name": "portafoliopruebas",
+  "version": "1.0.0",
+  "description": "Practicas de pruebas automatizadas",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielagsc0806/portafolioPruebas.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danielagsc0806/portafolioPruebas/issues"
+  },
+  "homepage": "https://github.com/danielagsc0806/portafolioPruebas#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.56.0",
+    "@types/node": "^24.7.2",
+    "allure-commandline": "^2.34.1",
+    "allure-playwright": "^3.4.2"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3"
+  }
+}
