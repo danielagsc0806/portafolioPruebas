@@ -1,0 +1,10 @@
+{
+  "platformName": "Android",
+  "appium:deviceName": "testPixel",
+  "appium:automationName": "UiAutomator2",
+  "appium:appPackage": "com.mercadolibre",
+  "appium:appActivity": "com.mercadolibre.home.activities.HomeActivity",
+  "appium:noReset": true,
+  "appium:newCommandTimeout": 300
+}
+
