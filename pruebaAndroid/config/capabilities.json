@@ -1,9 +1,9 @@
 {
   "platformName": "Android",
-  "appium:deviceName": "testPixel",
+  "appium:deviceName": "testML",
   "appium:automationName": "UiAutomator2",
   "appium:appPackage": "com.mercadolibre",
-  "appium:appActivity": "com.mercadolibre.home.activities.HomeActivity",
+  "appium:appActivity": "com.mercadolibre.navigation.activities.BottomBarActivity",
   "appium:noReset": true,
   "appium:newCommandTimeout": 300
 }
