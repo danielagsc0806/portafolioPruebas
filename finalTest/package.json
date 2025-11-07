@@ -16,7 +16,7 @@
   },
   "homepage": "https://github.com/danielagsc0806/portafolioPruebas#readme",
   "devDependencies": {
-    "@playwright/test": "^1.56.0",
+    "@playwright/test": "^1.56.1",
     "@types/node": "^24.7.2",
     "allure-commandline": "^2.34.1",
     "allure-playwright": "^3.4.2"
