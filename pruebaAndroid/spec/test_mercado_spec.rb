@@ -1,4 +1,3 @@
-# spec/mercado_libre_spec.rb
 require 'appium_lib'
 require 'json'
 require 'allure-rspec'
@@ -32,7 +31,7 @@ describe 'Flujo Mercado Libre', allure: true do
 
     search_container = @driver.find_element(:id, "com.mercadolibre:id/ui_components_toolbar_search_field")
     search_container.click
-    sleep 3
+    sleep 1
 
     search_box = @driver.find_element(:id, "com.mercadolibre:id/autosuggest_input_search")
     search_box.send_keys("playstation 5")
@@ -40,13 +39,11 @@ describe 'Flujo Mercado Libre', allure: true do
     @wait.until { @driver.find_element(:id, "com.mercadolibre:id/search_main_content").displayed? }
     @driver.screenshot('screenshots/2_busqueda_playstation.png')
     Allure.add_attachment(name: 'Búsqueda', source: File.open('screenshots/2_busqueda_playstation.png'), type: Allure::ContentType::PNG)
-    sleep 1
 
     # Abrir filtros
     filter_button = @driver.find_element(:xpath, '(//android.widget.LinearLayout[@resource-id="com.mercadolibre:id/appbar_content_layout"])[1]/android.widget.LinearLayout')
     filter_button.click
     @wait.until {@driver.find_element(:xpath, '//android.widget.FrameLayout[@resource-id="com.mercadolibre:id/andes_bottom_sheet_frame_view"]/android.widget.FrameLayout').displayed?}
-    sleep 1
 
     # Aplica filtros
     @driver.find_element(:xpath, '//android.view.View[@content-desc="Condición"]').click
@@ -55,24 +52,31 @@ describe 'Flujo Mercado Libre', allure: true do
     sleep 1
     @driver.screenshot('screenshots/3_condicion_nuevo.png')
     Allure.add_attachment(name: 'Condición: Nuevo', source: File.open('screenshots/3_condicion_nuevo.png'), type: Allure::ContentType::PNG)
+    sleep 1
 
     # Simular scroll hacia abajo
-    @driver.find_element(:xpath, '//android.view.View[@content-desc="Envíos"]').click
-    sleep 1
-    @driver.find_element(:xpath, '//android.view.View[@content-desc="Cantidad de controles incluidos"]').click
-    sleep 1
-    @driver.find_element(:xpath, '//android.view.View[@content-desc="Con Wi-Fi "]').click
+    @driver.execute_script('mobile: swipeGesture', {
+    direction: 'up', percent: 0.75,
+    left: 300, top: 800,
+    width: 800, height: 800
+    })
     sleep 1
 
     # Ordenar por precio mayor
     @driver.find_element(:xpath, '//android.view.View[@content-desc="Ordenar por "]').click
     @wait.until { @driver.find_element(:xpath, '//android.view.View[@resource-id="sort"]').displayed? }
     @driver.find_element(:xpath, '//android.widget.ToggleButton[@resource-id="sort-price_desc"]').click
-    @driver.screenshot('screenshots/3_ordenar.png')
-    Allure.add_attachment(name: 'Ordenar por:', source: File.open('screenshots/3_ordenar.png'), type: Allure::ContentType::PNG)
+    @driver.screenshot('screenshots/4_ordenar.png')
+    Allure.add_attachment(name: 'Ordenar por:', source: File.open('screenshots/4_ordenar.png'), type: Allure::ContentType::PNG)
     @driver.find_element(:xpath, '//android.widget.Button[@resource-id=":r3:"]').click
     @wait.until { @driver.find_element(:id, "com.mercadolibre:id/search_main_content").displayed? }
     sleep 1
+
+    @driver.execute_script('mobile: swipeGesture', {
+    direction: 'up', percent: 0.25,
+    left: 100, top: 400,
+    width: 800, height: 800
+    })
 
     # Extraer resultados
     cards = @driver.find_elements(:xpath, '(//android.view.View[@resource-id="polycard_component"])')
