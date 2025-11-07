@@ -1,0 +1,4 @@
+group :test do
+    gem 'appium_lib'
+    gem 'allure-rspec'
+end

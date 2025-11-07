@@ -1,0 +1,31 @@
+GEM
+  specs:
+    allure-rspec (2.27.0)
+      allure-ruby-commons (= 2.27.0)
+      rspec-core (>= 3.8, < 4)
+    allure-ruby-commons (2.27.0)
+      mime-types (>= 3.3, < 4)
+      require_all (>= 2, < 4)
+      rspec-expectations (~> 3.12)
+    diff-lcs (1.6.2)
+    logger (1.7.0)
+    mime-types (3.7.0)
+      logger
+      mime-types-data (~> 3.2025, >= 3.2025.0507)
+    mime-types-data (3.2025.0924)
+    require_all (3.0.0)
+    rspec-core (3.13.6)
+      rspec-support (~> 3.13.0)
+    rspec-expectations (3.13.5)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.13.0)
+    rspec-support (3.13.6)
+
+PLATFORMS
+  x64-mingw-ucrt
+
+DEPENDENCIES
+  allure-rspec
+
+BUNDLED WITH
+   2.6.9
