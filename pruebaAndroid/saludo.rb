@@ -1,1 +1,0 @@
-puts "¡Hola, Ruby está funcionando!"
