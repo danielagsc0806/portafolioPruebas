@@ -55,7 +55,7 @@ emulator -avd testML
 🧩Terminal 2 - Iniciar Appium server:
 appium
 
-🧪Temrinal 3 - Ejecutar test ruby spec: (la app se debe abrir manual mente antes de ejecutar la prueba)
+🧪Temrinal 3 - Ejecutar test ruby spec (la app se debe abrir manual mente antes de ejecutar la prueba):
 rspec spec/test_mercado_spec.rb
 
 📊Generar allure report:
