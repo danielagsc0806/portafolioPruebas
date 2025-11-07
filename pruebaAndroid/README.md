@@ -63,4 +63,3 @@ allure generate allure-results --clean -o allure-report
 
 🌐Abrir report:
 allure open allure-report
-
