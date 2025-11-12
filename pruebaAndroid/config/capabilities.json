@@ -5,6 +5,12 @@
   "appium:appPackage": "com.mercadolibre",
   "appium:appActivity": "com.mercadolibre.navigation.activities.BottomBarActivity",
   "appium:noReset": true,
-  "appium:newCommandTimeout": 300
+  "appium:fullReset": false,
+  "appium:newCommandTimeout": 120,
+  "appium:adbExecTimeout": 30000,
+  "appium:appWaitActivity": "*",
+  "appium:skipDeviceInitialization": true,
+  "appium:skipServerInstallation": true,
+  "appium:dontStopAppOnReset": true
 }
 
